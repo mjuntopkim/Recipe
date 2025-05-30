@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{23EBB24E-B5B9-4D2D-97DF-EE6B41D80091}"
+	ProjectSection(SolutionItems) = preProject
+		ingredients_master.json = ingredients_master.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0B807B2-3BC5-4394-90AA-795FAAA5E12F}
+	EndGlobalSection
+EndGlobal

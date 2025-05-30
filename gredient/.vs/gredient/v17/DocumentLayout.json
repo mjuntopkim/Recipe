@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\uAE40\uBBFC\uAD00\\25.1\\\uC624\uD508\uC18C\uC2A4\\\uD504\uB85C\uC81D\uD2B8\\gredient\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23EBB24E-B5B9-4D2D-97DF-EE6B41D80091}|\uC194\uB8E8\uC158 \uD56D\uBAA9{23EBB24E-B5B9-4D2D-97DF-EE6B41D80091}|C:\\Users\\\uAE40\uBBFC\uAD00\\25.1\\\uC624\uD508\uC18C\uC2A4\\\uD504\uB85C\uC81D\uD2B8\\gredient\\ingredients_master.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{23EBB24E-B5B9-4D2D-97DF-EE6B41D80091}|\uC194\uB8E8\uC158 \uD56D\uBAA9{23EBB24E-B5B9-4D2D-97DF-EE6B41D80091}|solutionrelative:ingredients_master.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ingredients_master.json",
+              "DocumentMoniker": "C:\\Users\\\uAE40\uBBFC\uAD00\\25.1\\\uC624\uD508\uC18C\uC2A4\\\uD504\uB85C\uC81D\uD2B8\\gredient\\ingredients_master.json",
+              "RelativeDocumentMoniker": "ingredients_master.json",
+              "ToolTip": "C:\\Users\\\uAE40\uBBFC\uAD00\\25.1\\\uC624\uD508\uC18C\uC2A4\\\uD504\uB85C\uC81D\uD2B8\\gredient\\ingredients_master.json",
+              "RelativeToolTip": "ingredients_master.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T01:12:11.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
