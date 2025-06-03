@@ -124,6 +124,7 @@ Developer’s Guide
     open_fridge_window() : 냉장고 버튼 클릭 시 fridge.py의 재료 관리 기능으로 진입. 
     update_warning_label() : 냉장고 데이터에서 유통기한이 7일 이하로 남은 재료를 감지하여 경고 라벨에 표시.
     main.py는 다른 모든 기능과 연결되는 중앙 허브로서의 역할을 하며, UI 초기화, 기능 모듈 진입, 데이터 초기 로딩 등 핵심 제어 로직을 포함한다.
+    
   4-2.	fridge.py
     open_fridge_window() : 냉장고 재료 관리 창 생성.
     ingredient_list : 현재 보유 중인 재료를 메모리 내에서 관리하는 리스트. 각 재료는 {"name": str, "expiry": str, "count": int}의 구조를 갖는다. 
@@ -133,6 +134,7 @@ Developer’s Guide
     delete_ingredient() : 사용자 확인 후 삭제 수행. 
     searchIngredient.py의 open_search_window() 함수에서 콜백으로 전달받은 add_ingredient_to_fridge() 함수를 통해 재료 추가.
     이 모듈은 사용자 재료 정보를 ingredients.json 파일에 저장하고, 이를 기반으로 프로그램 전반에서 데이터를 공유할 수 있게 한다.
+    
   4-3.	searchIngredient.py
     searchIngredient.py는 open_search_window() 함수를 통해 실행, 사용자가 재료를 검색하고 냉장고에 추가하는 과정의 UI를 제공.
     get_all_ingredients() : ingredients_master.json에서 마스터 재료 목록을 불러옴. 
@@ -140,10 +142,12 @@ Developer’s Guide
     on_click_ingr() : 재료 클릭 시 호출되며, 해당 재료의 유통기한을 입력할 수 있는 팝업 창이 생성. 
     submit() : 입력 후 유효성을 검사한 뒤, 콜백 함수를 통해 fridge.py로 데이터가 전달. 
     이 기능은 사용자 중심의 빠른 입력을 유도하며, 최근 재료 기반 자동 제안 및 유효성 검사를 포함해 UX 최적화를 지향한다.
+    
   4-4.	recipe_crawler.py
     레시피 검색 및 시각화는 두 가지 주요 함수에 의해 수행된다.
     get_recipes_from_10000recipe(keyword, max_results=6) : 검색 키워드를 기반으로 “만개의 레시피” 사이트에 요청을 보내고, HTML 응답을 파싱하여 레시피 제목, 이미지, 링크를 추출한 리스트를 반환.
     show_recipe_results(recipes) : Tkinter 팝업 창을 생성하고, 각 레시피를 이미지와 함께 카드 형태로 정렬하여 출력. 버튼 클릭 시 해당 웹사이트로 연결. 이미지가 로드되지 않을 경우에는 대체 텍스트로 표시되며, Pillow 라이브러리      를 통해 이미지 크기 조정 및 변환 작업이 진행. 이 모듈은 검색 기반 사용자 요청에 즉각적으로 응답한다.
+    
   4-5.	ingredientRecommend.py
     ingredientRecommend.py에서는 IngredientRecommendPage 클래스로 된다. 사용자는 마스터 재료 또는 냉장고 재료를 선택할 수 있으며, 선택한 재료는 내부 리스트 self.selected_ingredients에 저장. 
     recommend() : 선택된 재료들을 조합한 검색 키워드를 recipe_crawler.py의 크롤링 함수에 전달하여 레시피를 검색. 
