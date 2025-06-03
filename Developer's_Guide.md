@@ -29,15 +29,15 @@ Developer’s Guide
 3.	프로젝트 구조 설명
 4.	기능별 상세 설명
    
-4.1	main.py
+   4.1	main.py
 
-4.2	fridge.py
+   4.2	fridge.py
 
-4.3	searchIngredient.py
+   4.3	searchIngredient.py
 
-4.4	recipe_crawler.py
+   4.4	recipe_crawler.py
 
-4.5	ingredientRecommend.py
+   4.5	ingredientRecommend.py
 
 6.	데이터 구조
 7.	유지보수 및 확장
