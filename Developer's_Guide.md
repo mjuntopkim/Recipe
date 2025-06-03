@@ -171,8 +171,8 @@ Developer’s Guide
        },
      ]
 
-  ingredients_master.json 구조
-  [ "돼지고기", "소고기", "닭고기", "양고기" … ]
+     ingredients_master.json 구조
+     [ "돼지고기", "소고기", "닭고기", "양고기" … ]
 
 6.유지보수 및 확장
    모듈화 구조로 유지 보수가 쉬움
