@@ -6,9 +6,13 @@ import json
 import os
 from datetime import datetime
 from searchIngredient import open_search_window
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_FILE = os.path.join(BASE_DIR, "ingredients.json")
 
 ingredient_list = [] # 냉장고에 들어있는 재료 리스트
-DATA_FILE = "ingredients.json"  # 냉장고 재료 정보가 저장될 JSON 파일
+
 
 # 재료 데이터를 파일에 저장
 def save_data():

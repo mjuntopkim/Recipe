@@ -3,9 +3,16 @@ from tkinter import font, messagebox
 import json
 import os
 from datetime import datetime
+import os
+import tkinter as tk
+from tkinter import font, messagebox
+import json
+from datetime import datetime
 
-MASTER_FILE = "ingredients_master.json"
-DATA_FILE = "ingredients.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 위치
+MASTER_FILE = os.path.join(BASE_DIR, "ingredients_master.json")
+DATA_FILE = os.path.join(BASE_DIR, "ingredients.json")
+
 
 def get_recent_ingredients(max_count=9):
     if not os.path.exists(DATA_FILE):
